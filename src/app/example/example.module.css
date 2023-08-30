@@ -1,0 +1,246 @@
+/* .button {
+  background-color: var(--turquoise);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--soft-pink);
+}
+
+.card {
+  background-color: var(--light-gray);
+  border: 3px solid var(--navy);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.link {
+  color: var(--soft-pink);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+} */
+
+/* -----------------------------  */
+/* Navbar
+.navbar {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.link {
+  color: var(--soft-pink);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+Buttons 
+.primary-button {
+  background-color: var(--soft-pink);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.primary-button:hover {
+  background-color: var(--turquoise);
+}
+
+.secondary-button {
+  background-color: var(--white);
+  color: var(--navy);
+  padding: 10px 20px;
+  border: 2px solid var(--navy);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: var(--light-gray);
+}
+
+/ Cards 
+.card {
+  background-color: var(--light-gray);
+  border: 3px solid var(--navy);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections 
+.section-light {
+  background-color: var(--light-gray);
+  padding: 50px;
+  text-align: center;
+}
+
+.section-dark {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 50px;
+  text-align: center;
+}
+/* Typography 
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+} */
+/* -----------------------------  */
+
+/* Navbar */
+.navbar {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
+.link {
+  color: var(--soft-pink);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Buttons */
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button-1 {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-1:hover {
+  background-color: var(--turquoise);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add similar styles for button-2, button-3, and button-4 */
+
+/* Cards */
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  background-color: var(--light-gray);
+  border: 3px solid var(--navy);
+}
+
+/* Add similar styles for card-2, card-3, and card-4 */
+
+/* Sections */
+.section-light {
+  background-color: var(--light-gray);
+  padding: 50px;
+  text-align: center;
+}
+
+.section-dark {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 50px;
+  text-align: center;
+}
+
+/* Additional Button Styles */
+.button-2 {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-2:hover {
+  background-color: var(--soft-pink);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-3 {
+  background-color: var(--light-gray);
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.button-3:hover {
+  background-color: var(--turquoise);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-4 {
+  background-color: var(--white);
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.button-4:hover {
+  background-color: var(--soft-pink);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Card Styles */
+.card-2 {
+  background-color: var(--navy);
+  color: var(--white);
+  border: 3px solid var(--soft-pink);
+}
+
+.card-3 {
+  background-color: var(--turquoise);
+  color: var(--navy);
+  border: 3px solid var(--white);
+}
+
+.card-4 {
+  background-color: var(--soft-pink);
+  color: var(--white);
+  border: 3px solid var(--navy);
+}
