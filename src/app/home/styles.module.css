@@ -1,0 +1,99 @@
+/* Sections */
+.section-light-gray {
+  margin: 0;
+  background-color: var(--light-gray);
+  padding: 30px;
+  text-align: center;
+}
+
+.section-navy {
+  margin: 0;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 60px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.section-soft-pink {
+  margin: 0;
+  background-color: var(--soft-pink);
+  padding: 60px;
+  text-align: center;
+  min-height: 800px;
+}
+
+.section-turquoise {
+  margin: 0;
+  background-color: var(--turquoise);
+  padding: 60px;
+  text-align: center;
+  min-height: 800px;
+}
+
+.section-white {
+  margin: 0;
+  background-color: var(--white);
+  padding: 60px;
+  text-align: center;
+}
+
+.section-black {
+  margin: 0;
+  background-color: var(--black);
+  padding: 60px;
+  text-align: center;
+  color: var(--white);
+}
+
+/* Buttons */
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-10,
+.button-11,
+.button-12,
+.button-13,
+.button-14,
+.button-15,
+.button-16,
+.button-17,
+.button-18,
+.button-19 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Individual Button Styles */
+.button-1 {
+  background-color: var(--navy);
+  color: var(--white);
+  border: 2px solid var(--soft-pink);
+}
+
+.button-1:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-2 {
+  background-color: var(--navy);
+  color: var(--white);
+  border: 2px solid var(--turquoise);
+}
+
+.button-2:hover {
+  background-color: var(--turquoise);
+  color: var(--white);
+}

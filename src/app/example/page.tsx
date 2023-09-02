@@ -9,7 +9,8 @@ export default function Page() {
       <div className={styles.navbar}>
         <Link href="/" className={styles.link}>
           Home
-        </Link>
+        </Link>{" "}
+        <br></br>
         <Link href="/about" className={styles.link}>
           About
         </Link>
@@ -23,11 +24,71 @@ export default function Page() {
       </section>
 
       {/* Buttons */}
-      <div className="flex space-x-4 mt-4">
-        <button className={styles["button-1"]}>Contact Me</button>
-        <button className={styles["button-2"]}>See Projects</button>
-        <button className={styles["button-3"]}>Blog</button>
-        <button className={styles["button-4"]}>About</button>
+      <section className={styles["section-light"]}>
+        <div className="flex space-x-4 mt-4s">
+          <button className={styles["button-8"]}>Contact Me</button>
+          <button className={styles["button-7"]}>Contact Me</button>
+          <button className={styles["button-1"]}>Contact Me</button>
+          <button className={styles["button-2"]}>See Projects</button>
+          <button className={styles["button-5"]}>About</button>
+        </div>
+
+        <div className="flex space-x-4 mt-4">
+          <button className={styles["button-6"]}>Contact Me</button>
+          <button className={styles["button-3"]}>Blog</button>
+          <button className={styles["button-4"]}>About</button>
+          <button className={styles["button-9"]}>See Projects</button>
+        </div>
+      </section>
+
+      <div className={styles["section-dark"]}>
+        <div className="flex space-x-4 mt-4s">
+          <button className={styles["button-8"]}>Contact Me</button>
+          <button className={styles["button-7"]}>Contact Me</button>
+          <button className={styles["button-1"]}>Contact Me</button>
+          <button className={styles["button-2"]}>See Projects</button>
+          <button className={styles["button-5"]}>About</button>
+        </div>
+
+        <div className="flex space-x-4 mt-4">
+          <button className={styles["button-6"]}>Contact Me</button>
+          <button className={styles["button-3"]}>Blog</button>
+          <button className={styles["button-4"]}>About</button>
+          <button className={styles["button-9"]}>See Projects</button>
+        </div>
+      </div>
+      <div className={styles["section-pink"]}>
+        <div className="flex space-x-4 mt-4s">
+          <button className={styles["button-8"]}>Contact Me</button>
+          <button className={styles["button-7"]}>Contact Me</button>
+          <button className={styles["button-1"]}>Contact Me</button>
+          <button className={styles["button-2"]}>See Projects</button>
+          <button className={styles["button-5"]}>About</button>
+        </div>
+
+        <div className="flex space-x-4 mt-4">
+          <button className={styles["button-6"]}>Contact Me</button>
+          <button className={styles["button-3"]}>Blog</button>
+          <button className={styles["button-4"]}>About</button>
+          <button className={styles["button-9"]}>See Projects</button>
+        </div>
+      </div>
+
+      <div className={styles["section-turquoise"]}>
+        <div className="flex space-x-4 mt-4s">
+          <button className={styles["button-8"]}>Contact Me</button>
+          <button className={styles["button-7"]}>Contact Me</button>
+          <button className={styles["button-1"]}>Contact Me</button>
+          <button className={styles["button-2"]}>See Projects</button>
+          <button className={styles["button-5"]}>About</button>
+        </div>
+
+        <div className="flex space-x-4 mt-4">
+          <button className={styles["button-6"]}>Contact Me</button>
+          <button className={styles["button-3"]}>Blog</button>
+          <button className={styles["button-4"]}>About</button>
+          <button className={styles["button-9"]}>See Projects</button>
+        </div>
       </div>
 
       {/* Portfolio Section */}

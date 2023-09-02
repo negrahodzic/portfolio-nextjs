@@ -1,0 +1,286 @@
+/* Navbar */
+.navbar {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
+.link {
+  color: var(--soft-pink);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Sections */
+.section-light-gray {
+  margin: 0;
+  background-color: var(--light-gray);
+  padding: 60px;
+  text-align: center;
+}
+
+.section-navy {
+  margin: 0;
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 60px;
+  text-align: center;
+}
+
+.section-soft-pink {
+  margin: 0;
+  background-color: var(--soft-pink);
+  padding: 60px;
+  text-align: center;
+}
+
+.section-turquoise {
+  margin: 0;
+  background-color: var(--turquoise);
+  padding: 60px;
+  text-align: center;
+}
+
+.section-white {
+  margin: 0;
+  background-color: var(--white);
+  padding: 60px;
+  text-align: center;
+}
+
+.section-black {
+  margin: 0;
+  background-color: var(--black);
+  padding: 60px;
+  text-align: center;
+  color: var(--white);
+}
+
+/* Buttons */
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-10,
+.button-11,
+.button-12,
+.button-13,
+.button-14,
+.button-15,
+.button-16,
+.button-17,
+.button-18,
+.button-19 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Individual Button Styles */
+.button-1 {
+  background-color: var(--soft-pink);
+  color: var(--white);
+  border: 2px solid var(--soft-pink);
+}
+
+.button-1:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-2 {
+  background-color: var(--navy);
+  color: var(--white);
+  border: 2px solid var(--navy);
+}
+
+.button-2:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-3 {
+  background-color: var(--turquoise);
+  color: var(--white);
+  border: 2px solid var(--turquoise);
+}
+
+.button-3:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-4 {
+  background-color: var(--white);
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.button-4:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-5 {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--black);
+}
+
+.button-5:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-6 {
+  background-color: var(--light-gray);
+  color: var(--black);
+  border: 2px solid var(--light-gray);
+}
+
+.button-6:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-7 {
+  background-color: var(--white);
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.button-7:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-8 {
+  background-color: var(--navy);
+  color: var(--soft-pink);
+  border: 2px solid var(--navy);
+}
+
+.button-8:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-9 {
+  background-color: var(--soft-pink);
+  color: var(--white);
+  border: 2px solid var(--soft-pink);
+}
+
+.button-9:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-10 {
+  background-color: var(--turquoise);
+  color: var(--white);
+  border: 2px solid var(--turquoise);
+}
+
+.button-10:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-11 {
+  background-color: var(--light-gray);
+  color: var(--black);
+  border: 2px solid var(--light-gray);
+}
+
+.button-11:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-12 {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--black);
+}
+
+.button-12:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-13 {
+  background-color: var(--white);
+  color: var(--soft-pink);
+  border: 2px solid var(--white);
+}
+
+.button-13:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-14 {
+  background-color: var(--soft-pink);
+  color: var(--white);
+  border: 2px solid var(--soft-pink);
+}
+
+.button-14:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-15 {
+  background-color: var(--navy);
+  color: var(--white);
+  border: 2px solid var(--navy);
+}
+
+.button-15:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-16 {
+  background-color: var(--turquoise);
+  color: var(--white);
+  border: 2px solid var(--turquoise);
+}
+
+.button-16:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.button-17 {
+  background-color: var(--white);
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.button-17:hover {
+  background-color: var(--soft-pink);
+  color: var(--white);
+}
+
+.button-18 {
+  background-color: var(--black);
+  color: var(--white);
+  border: 2px solid var(--black);
+}
+
+.button-18:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
