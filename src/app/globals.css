@@ -29,8 +29,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 :root {
-  --navy: #1a202c;
-  --light-gray: #f1f5f7;
+  /* --navy: #2e304b; */
+  --navy: #000000;
+  /* --light-gray: #f1f5f7; */
+  --light-gray: #d4c25c;
   --soft-pink: #ed64a6;
   --turquoise: #38b2ac;
   --white: #ffffff;
