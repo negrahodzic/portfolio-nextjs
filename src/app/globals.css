@@ -26,29 +26,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"); */
 
 :root {
   /* --navy: #2e304b; */
-  --navy: #000000;
+  /* --navy: #000000;
   /* --light-gray: #f1f5f7; */
-  --light-gray: #d4c25c;
+  /* --light-gray: #d4c25c;
   --soft-pink: #ed64a6;
-  --turquoise: #38b2ac;
+  --turquoise: #38b2ac;  */
   --white: #ffffff;
+  --gray: #7f7f7f;
   --black: #000000;
+  --light-black: #000000ae;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--quicksand);
+  /* line-height: 1.6; */
 }

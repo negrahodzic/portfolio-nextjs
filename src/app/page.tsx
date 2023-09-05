@@ -1,117 +1,198 @@
-import Image from "next/image";
-import Link from "next/link";
+"use client";
 
-export default function Home() {
+import React, { useState } from "react";
+import styles from "./styles.module.css";
+
+export default function Page() {
+  // State to manage the active tab
+  const [activeTab, setActiveTab] = useState("turningPoint");
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <h1>
-          <Link href="/contact">Contact page</Link>
-        </h1>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      {/* Welcome Section */}
+      <div className={`${styles.sectionIntro} flex flex-col md:flex-row`}>
+        <div className="flex-1 flex flex-col items-center justify-center text-center ps-5">
+          <p className="text-3xl md:text-4xl">WELCOME TO</p>
+          <p
+            className={`text-5xl md:text-6xl text-slate-400 ${styles.glowingText}`}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            MY TECH JOURNEY!
+          </p>
+          <p className="text-3xl md:text-3xl">NEGRA HODZIC</p>
+        </div>
+        <div className="flex justify-center md:justify-start items-center pe-12">
+          <img
+            className="w-auto h-[12rem] md:h-[16rem]"
+            src="hello-avatar.webp"
+            alt="Hello Avatar"
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Navigation Bar Section */}
+      <div className={styles.navbar}>
+        <button className={styles.navButton}>Home</button>
+        <button className={styles.navButton}>Projects</button>
+        <button className={styles.navButton}>Contact</button>
+        <button className={styles.navButton}>CV</button>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      {/* Quick Facts Section */}
+      {/* <div className={`${styles.sectionQuickFacts} ${styles.quickFacts}`}>
+        <h2 className={`${styles.heading2} ${styles.quickFactsTitle}`}>
+          Quick Facts
+        </h2>
+        <div className={styles.quickFactsGrid}>
+          <div className={styles.quickFactItem}>
+            <span className={styles.quickFactLabel}>Degree:</span>
+            <span className={styles.quickFactValue}>
+              BCS in Information Systems and Technologies
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className={styles.quickFactItem}>
+            <span className={styles.quickFactLabel}>Roles:</span>
+            <span className={styles.quickFactValue}>
+              Full-Stack Developer, Frontend Developer, Freelance Software
+              Developer
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className={styles.quickFactItem}>
+            <span className={styles.quickFactLabel}>Main Project:</span>
+            <span className={styles.quickFactValue}>
+              Rat Bot—a Discord Chatbot that grew into a full brand with its own
+              website, API, and community
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className={styles.quickFactItem}>
+            <span className={styles.quickFactLabel}>Other Experience:</span>
+            <span className={styles.quickFactValue}>
+              Digital Marketing (won 1st place in a case study competition)
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          </div>
+        </div>
+      </div> */}
+      {/* Quick Facts Section */}
+      <div
+        className={`${styles.sectionQuickFacts} flex flex-col md:flex-row md:justify-start`}
+      >
+        <div className="flex-1 flex items-center justify-center md:justify-center text-center md:text-left p-4 mb-0 md:mb-4">
+          <h2 className="text-5xl font-bold">QUICK FACTS</h2>
+        </div>
+        <div className="flex-1 flex flex-wrap justify-center md:justify-start p-4 mt-0 md:mt-4">
+          {/* Fact Card */}
+          {[
+            "Full-Stack Dev with a knack for React and Node.js.",
+            "TypeScript enthusiast who loves clean code.",
+            "X years in the game, always up for a challenge.",
+            "Certified in JS & Python, with a BCs in IST.",
+            "UK-bound? Absolutely, for the right gig.",
+          ].map((fact, index) => (
+            <div key={index} className="flex items-center mb-4">
+              <div className={`${styles.quickFactLabel} text-white mr-4`}>
+                {index + 1}.
+              </div>
+              <div>
+                <span className={`${styles.quickFactValue} text-gray-300`}>
+                  {fact}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </main>
+      {/* Navigation Bar Section */}
+      <div className={styles.navbar}></div>
+
+      {/* Education */}
+      <div
+        className={`${styles.sectionEducation} flex flex-col md:flex-row md:justify-start`}
+      >
+        <div className="flex-1 flex items-center justify-center md:justify-center text-center md:text-center p-4 mb-0 md:mb-4">
+          <h2 className="text-5xl font-bold">EDUCATIONAL BACKGROUND</h2>
+        </div>
+        <div className="flex-1 flex flex-wrap justify-center md:justify-start p-4 mt-0 md:mt-4">
+          <div className={styles.tabContainer}>
+            <button
+              className={
+                activeTab === "turningPoint" ? styles.activeTab : styles.tab
+              }
+              onClick={() => setActiveTab("turningPoint")}
+            >
+              The Turning Point
+            </button>
+            <button
+              className={
+                activeTab === "facultyChoice" ? styles.activeTab : styles.tab
+              }
+              onClick={() => setActiveTab("facultyChoice")}
+            >
+              Why Pick the Faculty
+            </button>
+            <button
+              className={
+                activeTab === "regrets" ? styles.activeTab : styles.tab
+              }
+              onClick={() => setActiveTab("regrets")}
+            >
+              Any Regrets
+            </button>
+          </div>
+          <div className={styles.tabContent}>
+            {activeTab === "turningPoint" && (
+              <p className={styles.tabText}>
+                In 2016, I had to make a big choice. I was good at a lot of
+                subjects, but the idea of doing just any job for the rest of my
+                life didn't sit well with me. I asked myself, "What's the one
+                thing that can keep me hooked for hours?" The answer was easy:
+                Informatics. It was the only subject that made my weekends
+                interesting. Career tests also suggested I should pick something
+                creative and visual. So, I decided to go for a degree and career
+                in IT, enrolling at the Faculty of Organizational Sciences with
+                a focus on Information Systems and Technologies.
+              </p>
+            )}
+            {activeTab === "facultyChoice" && (
+              <p className={styles.tabText}>
+                2016 was a year of change for me. I was pretty shy and wanted to
+                get better at more than just Math and IT. The Faculty of
+                Organizational Sciences gave me that chance. It had a mix of
+                tech and business courses. Besides coding, I learned about
+                Psychology, Project Management, Marketing, and Finance. The
+                school also had lots of student groups and activities, which was
+                a big plus for me.
+              </p>
+            )}
+            {activeTab === "regrets" && (
+              <p className={styles.tabText}>
+                Going to the Faculty of Organizational Sciences was one of the
+                best decisions I've made. It gave me more than just tech skills.
+                I got to join tech groups, plan events, and even travel to
+                Sweden for a business week. I won a case study competition and
+                got to work in Digital Marketing at BOSCH. In my third year, I
+                went to Romania for a Frontend internship through AIESEC. That's
+                how I got my first job in IT. The school gave me chances to do a
+                lot more than just study.
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+      {/* Experience */}
+      <div className={`${styles.sectionExperiance} ${styles.quickFacts}`}>
+        <h2 className={`${styles.heading2} ${styles.quickFactsTitle}`}>
+          Experience
+        </h2>
+      </div>
+      {/* Projects */}
+      <div className={`${styles.sectionEducation} ${styles.quickFacts}`}>
+        <h2 className={`${styles.heading2} ${styles.quickFactsTitle}`}>
+          Projects
+        </h2>
+      </div>
+      {/* Contact */}
+      <div className={`${styles.sectionExperiance} ${styles.quickFacts}`}>
+        <h2 className={`${styles.heading2} ${styles.quickFactsTitle}`}>
+          Contact
+        </h2>
+      </div>
+    </div>
   );
 }
